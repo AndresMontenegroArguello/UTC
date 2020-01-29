@@ -1,0 +1,35 @@
+Algoritmo BMW
+	// Introducción
+	Escribir "Logica y Algoritmos"
+	Escribir "Andres Montenegro"
+	Escribir "28/Enero/2020"
+	Escribir "Tarea 1.3"
+	Escribir "BMW Costa Rica"
+	Escribir "**********"
+	
+	// Definición de variables
+	Definir Empleado Como Caracter
+	Definir Ventas Como Entero
+	Definir TotalVenta, ComisionBase, ComisionPorcentaje, Salario Como Real
+	
+	// Ingreso de datos por el usuario
+	Escribir "Ingrese el nombre del empleado: "
+	Leer Empleado
+	Escribir "Ingrese el numero de ventas realizadas en el mes: "
+	Leer Ventas
+	
+	Para n<-1 Hasta Ventas Con Paso 1 Hacer
+		Escribir "Ingrese el total de la venta #", n, " en Colones: "
+		Leer TotalVenta
+		ComisionBase<-ComisionBase+100000
+		ComisionPorcentaje<-ComisionPorcentaje+(TotalVenta*0.10)
+		Escribir "Comisión por venta: ", ComisionBase + ComisionPorcentaje,  "Colones (", ComisionBase, " + ", ComisionPorcentaje, ")"
+	Fin Para
+	
+	// Procesamiento de datos
+	Salario = 800000 + ComisionBase + ComisionPorcentaje
+	
+	// Presentación de resultados
+	Escribir "El Salario del Mes de ", Empleado, " es de ", Salario ,"Colones"
+	
+FinAlgoritmo

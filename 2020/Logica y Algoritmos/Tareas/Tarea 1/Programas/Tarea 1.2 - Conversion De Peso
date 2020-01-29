@@ -1,0 +1,30 @@
+Algoritmo ConversionDePeso
+	// Introducción
+	Escribir "Logica y Algoritmos"
+	Escribir "Andres Montenegro"
+	Escribir "28/Enero/2020"
+	Escribir "Tarea 1.2"
+	Escribir "Conversion de Peso"
+	Escribir "**********"
+	
+	// Definición de variables
+	Definir Kg, Lb, Oz, Tn, Gr Como Real
+	
+	// Ingreso de datos por el usuario
+	Escribir "Ingrese un peso en kilogramos (Kg): "
+	Leer Kg
+	
+	// Procesamiento de datos
+	Lb<-Kg*2.205
+	Oz<-Kg*35.274
+	Tn<-Kg*0.0011
+	Gr<-Kg*1000
+	
+	// Presentación de resultados
+	Escribir "Conversión de ", Kg, "Kg"
+	Escribir "Libras = ", Lb, "Lb"
+	Escribir "Onzas = ", Oz, "Oz"
+	Escribir "Toneladas = ", Tn, "Tn"
+	Escribir "Gramos = ", Gr, "Gr"
+	
+FinAlgoritmo

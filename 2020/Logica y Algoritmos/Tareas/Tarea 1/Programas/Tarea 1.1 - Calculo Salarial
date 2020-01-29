@@ -1,0 +1,36 @@
+Algoritmo CalculoSalarial
+	// Introducción
+	Escribir "Logica y Algoritmos"
+	Escribir "Andres Montenegro"
+	Escribir "28/Enero/2020"
+	Escribir "Tarea 1.1"
+	Escribir "Calculo  Salarial"
+	Escribir "**********"
+	
+	// Definición de variables
+	Definir Empleado Como Caracter
+	Definir HorasDiarias Como Entero
+	Definir SalarioHora, SalarioDiario, SalarioSemanal, SalarioMensual, SalarioAnual Como Real
+	
+	// Ingreso de datos por el usuario
+	Escribir "Ingrese el nombre del empleado: "
+	Leer Empleado
+	Escribir "Ingrese el numero de horas de trabajo diarias: "
+	Leer HorasDiarias
+	Escribir "Ingrese el salario por hora: ($) "
+	Leer SalarioHora
+	
+	// Procesamiento de datos
+	SalarioDiario<-HorasDiarias*SalarioHora
+	SalarioSemanal<-SalarioDiario*5
+	SalarioMensual<-SalarioSemanal*4
+	SalarioAnual<-SalarioMensual*12
+	
+	// Presentación de resultados
+	Escribir "Calculo Salarial de ", Empleado
+	Escribir "Salario/Dia: $", SalarioDiario
+	Escribir "Salario/Semana: $", SalarioSemanal
+	Escribir "Salario/Mes: $", SalarioMensual
+	Escribir "Salario/Año: $", SalarioAnual
+	
+FinAlgoritmo
