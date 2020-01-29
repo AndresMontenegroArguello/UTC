@@ -4,6 +4,8 @@ UTC
 28/01/2020
 *************************
 
+Repositorio de GitHub: https://github.com/AndresMontenegroArguello/UTC/tree/master/2020/Logica%20y%20Algoritmos/Tareas/Tarea%201
+
 Este paquete contiene la tarea #1 de la asignatura de Lógica y Algoritmos.
 
 Además de la tarea, incluye un anexo que contiene cada programa de la tarea implementado en Python 3, lo cual realizé como un ejercicio y prueba de concepto - comprobando positivamente que escribir un programa en pseudocódigo (en este caso en PSeInt) facilita y disminuye el tiempo de desarrollo de un programa en un lenguaje de programación (como Python) - para afianzar los conocimientos adquiridos.
