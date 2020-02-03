@@ -1,0 +1,26 @@
+Algoritmo Colones
+	// Introducción
+	Escribir "Logica y Algoritmos"
+	Escribir "Andres Montenegro"
+	Escribir "02/Febrero/2020"
+	Escribir "Tarea 2.2"
+	Escribir "Colones"
+	Escribir "**********"
+	
+	// Definición de variables
+	Definir Pepe, Ana, Juan Como Real
+	
+	// Ingreso de datos por el usuario
+	Escribir "Ingrese la cantidad de Colones que posee Pepe: "
+	Leer Pepe
+	
+	// Procesamiento de datos
+	Juan<-Pepe/2
+	Ana<-(Juan+Pepe)/2
+	
+	// Presentación de resultados
+	Escribir "Pepe posee ", Pepe, " Colones"
+	Escribir "Juan posee ", Juan, " Colones"
+	Escribir "Ana posee ", Ana, " Colones"
+	
+FinAlgoritmo

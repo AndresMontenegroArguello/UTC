@@ -1,0 +1,40 @@
+Algoritmo Calificaciones
+	// Introducción
+	Escribir "Logica y Algoritmos"
+	Escribir "Andres Montenegro"
+	Escribir "02/Febrero/2020"
+	Escribir "Tarea 2.3"
+	Escribir "Calificaciones"
+	Escribir "**********"
+	
+	// Definición de variables
+	Definir Nota Como Real
+	Definir Calificacion Como Caracter
+	
+	// Ingreso de datos por el usuario
+	Escribir "Ingrese la nota obtenida: "
+	Leer Nota
+	
+	// Procesamiento de datos
+	Si Nota>=60 Y Nota<70 Entonces
+		Calificacion<-"Insuficiente"
+	SiNo
+		Si Nota>=70 Y Nota<80 Entonces
+			Calificacion<-"Suficiente"
+		SiNo
+			Si Nota>=80 Y Nota<90 Entonces 
+				Calificacion<-"Bien"
+				SiNo
+					Si Nota>=90 Y Nota<=100 Entonces
+						Calificacion<-"Sobresaliente"
+					SiNo
+						Calificacion<-"Indefinida"
+					FinSi
+				FinSi				
+		FinSi
+	FinSi
+			
+	// Presentación de resultados
+	Escribir "Su Calificacion es ", Calificacion
+	
+FinAlgoritmo

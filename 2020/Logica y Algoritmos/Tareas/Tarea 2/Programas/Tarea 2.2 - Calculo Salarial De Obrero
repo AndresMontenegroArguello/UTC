@@ -1,0 +1,28 @@
+Algoritmo CalculoSalarialObrero
+	// Introducción
+	Escribir "Logica y Algoritmos"
+	Escribir "Andres Montenegro"
+	Escribir "02/Febrero/2020"
+	Escribir "Tarea 2.2"
+	Escribir "Calculo Salarial De Obrero"
+	Escribir "**********"
+	
+	// Definición de variables
+	Definir Horas Como Entero
+	Definir SalarioSemanal Como Real
+	
+	// Ingreso de datos por el usuario
+	Escribir "Ingrese el numero de horas trabajadas en la semana: "
+	Leer Horas
+	
+	// Procesamiento de datos
+	Si Horas>40 Entonces
+		SalarioSemanal<-(40*4000)+((Horas-40)*5000)
+	SiNo
+		SalarioSemanal<-Horas*4000
+	Fin Si
+	
+	// Presentación de resultados
+	Escribir "El salario semanal es de: ",  SalarioSemanal, " Colones"
+	
+FinAlgoritmo
