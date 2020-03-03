@@ -1,0 +1,103 @@
+Algoritmo Colones
+	// Introducción
+	Escribir "Logica y Algoritmos"
+	Escribir "Andres Montenegro"
+	Escribir "29/Febrero/2020"
+	Escribir "Tarea 3"
+	Escribir "Restaurante"
+	Escribir "**********"
+	
+	// Definición de variables
+	Definir Continuar, Refresco, Tarjeta Como Entero
+	Definir Precio1, Precio2, Precio3, Precio4, PrecioR, Total, Descuento, MontoTarjeta, MontoEfectivo Como Real
+	
+	Continuar = 1
+	Refresco = 0
+	Total = 0
+	Precio1 = 3000
+	Precio2 = 2500
+	Precio3 = 3500
+	Precio4 = 2000
+	PrecioR = 600
+	
+	// Ingreso de datos por el usuario + Procesamiento de datos
+	Escribir "Bienvenido a Restaurante X"
+	Escribir "**********"
+	Escribir "Menu"
+	Escribir "**********"
+	Escribir "Refresco - c600"
+	Escribir "Opciones:"
+	Escribir "1) Pizza - c3000"
+	Escribir "2) Pollo - c2500"
+	Escribir "3) Hamburguesa - c3500"
+	Escribir "4) Tacos - c2000"
+	
+	Mientras Continuar = 1	 Hacer
+		Escribir "Que desea ordenar? (Escriba el numero de la opcion)"
+		Leer Orden
+		Si Orden = 1 Entonces
+			PrecioOrden = Precio1
+		SiNo
+			Si Orden = 2 Entonces
+				PrecioOrden = Precio2
+			SiNo
+				Si Orden = 3 Entonces
+					PrecioOrden = Precio3
+				SiNo
+					Si Orden = 4 Entonces
+						PrecioOrden = Precio4
+					SiNo
+						PrecioOrden = 0
+						Escribir "Opcion Incorrecta"
+					Fin Si
+				Fin Si
+			Fin Si
+		Fin Si
+		Total = Total + PrecioOrden
+		
+		Escribir "Desea Agregar Refresco? (Si = 1, No = 0)"
+		Leer Refresco
+		
+		Si Refresco = 1 Entonces
+			Total = Total + PrecioR
+		Fin Si
+		
+		Escribir "Desea Ordenar Algo Mas? (Si = 1, No = 0)"
+		Leer Continuar
+	Fin Mientras
+	
+	Escribir "El Total es ", Total, " Colones"
+	Escribir "Desea Pagar con Tarjeta o en Efectivo? (Tarjeta = 1, Efectivo = 0)"
+	Leer Tarjeta
+	
+	Si Tarjeta = 1 Entonces
+		Escribir "Monto de tarjeta: "
+		Leer MontoTarjeta
+		
+		Si MontoTarjeta > Total Entonces
+			Descuento = Total * (0.10)
+			Total = Total - Descuento
+			Escribir "Pago Realizado."
+			Escribir "Descuento del 5%: c", Descuento
+			Escribir "Total Con Descuento: c", Total
+		SiNo
+			Escribir "Pago Denegado."
+		Fin Si
+	SiNo
+		Escribir "Monto en efectivo: "
+		Leer MontoEfectivo
+		
+		Si MontoEfectivo > Total Entonces
+			Vuelto = MontoEfectivo - Total
+			Escribir "Pago Realizado."
+			Escribir "Vuelto: c", Vuelto
+		SiNo
+			Escribir "Pago Denegado."
+		Fin Si
+	Fin Si
+	
+	// Presentación de resultados
+	Escribir "El Total es ", Total, " Colones"
+	Escribir "Muchas Gracias Por Preferirnos"
+	
+FinAlgoritmo
