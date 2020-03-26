@@ -1,0 +1,24 @@
+Algoritmo CuadradoCubo
+	// Introducción
+	Escribir 'Introduccion a la Programacion'
+	Escribir 'Andres Montenegro'
+	Escribir '22/Marzo/2020'
+	Escribir 'Tarea 4.2'
+	Escribir 'Clase #10 - Cuadrado Cubo'
+	Escribir '**********'
+	
+	//Programa
+	Escribir "Ingrese Numero: "
+	Leer n
+	
+	c2 <- n * n
+	c3 <- n * n * n
+	r2 <- rc(n)
+	r3 <- n^(1/3)
+	
+	Escribir "El Cuadrado Es ", c2
+	Escribir "El Cubo Es ", c3
+	Escribir "La Raiz Cuadrada Es ", r2
+	Escribir "La Raiz Cubica Es ", r3
+	
+FinAlgoritmo
