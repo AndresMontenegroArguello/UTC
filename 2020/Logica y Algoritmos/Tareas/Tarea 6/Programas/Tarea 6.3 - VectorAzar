@@ -1,0 +1,35 @@
+Algoritmo VectorAzar
+	// Introducción
+	Escribir 'Logica y Algoritmos'
+	Escribir 'Andres Montenegro'
+	Escribir '23/Marzo/2020'
+	Escribir 'Tarea 6.3'
+	Escribir 'Clase #11 - Vector Al Azar'
+	Escribir '**********'
+	
+	suma <- 0
+	Dimension vector(10)
+	
+	Para n <- 1 Hasta 10 Con Paso 1 Hacer
+		vector(n) <- azar(100)
+		suma <- suma + vector(n)
+		Escribir "Numero # ", n, ": ", vector(n)
+	Fin Para
+	
+	nmenor <- vector(1)
+	nmayor <- vector(1)
+	
+	Para n <- 1 Hasta 10 Hacer
+		Si vector(n) < nmenor Entonces
+			nmenor <- vector(n)
+		FinSi
+		Si vector(n) > nmayor Entonces
+			nmayor <- vector(n)
+		FinSi
+	FinPara
+	
+	Escribir "La suma de los 10 numeros es: ", suma
+	Escribir "Menor: ", nmenor
+	Escribir "Mayor: ", nmayor
+	
+FinAlgoritmo

@@ -1,0 +1,59 @@
+Algoritmo CajeroAutomatico
+	// Introducción
+	Escribir 'Logica y Algoritmos'
+	Escribir 'Andres Montenegro'
+	Escribir '23/Marzo/2020'
+	Escribir 'Tarea 6.2'
+	Escribir 'Clase #11 - Cajero Automatico'
+	Escribir '**********'
+	
+	Definir op, saldo, dep, giro Como Entero
+	saldo <- 0
+	dep <- 0
+	Repetir
+		Escribir "Bienvenido"
+		Escribir "Cajero Automatico"
+		Escribir "Seleccione opcion"
+		Escribir "1: Ver estado de cuenta"
+		Escribir "2: Ingresar dinero a la cuenta"
+		Escribir "3: Retirar dinero de la cuenta"
+		Escribir "4: Salir"
+		Leer op
+		Limpiar Pantalla
+		Segun op Hacer
+			1:
+				Escribir "Saldo: ", saldo
+			2:
+				Escribir "Ingrese la cantidad a depositar"
+				Leer dep
+				saldo <- saldo + dep
+				Escribir "Deposito: ", dep, ". Gracias,"
+			2:
+				Si dep > 0 Entonces
+					Escribir "Su deposito fue: ", dep
+				SiNo
+					Escribir "No ha realizado deposito."
+				FinSi
+			3:
+				Escribir "Escriba cuanto desea retirar"
+				Leer giro
+				Si giro < saldo Entonces
+					saldo <- (saldo - giro)
+					Escribir "Usted retiro: ", giro
+					Escribir "Su nuevo saldo es: ", saldo
+				SiNo
+					Escribir "Saldo Insuficiente"
+					Escribir "Ingrese un valor inferior a ", saldo
+				FinSi
+			4:
+				Escribir "Adios. Gracias."
+			De Otro Modo:
+				Escribir "Ingrese una opcion valida"
+		FinSegun
+		Esperar Tecla
+		Limpiar Pantalla
+	Hasta Que op=4
+	Esperar Tecla
+	Limpiar Pantalla
+	
+FinAlgoritmo

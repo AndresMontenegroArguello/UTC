@@ -1,0 +1,24 @@
+Algoritmo Fechas
+	// Introducción
+	Escribir 'Logica y Algoritmos'
+	Escribir 'Andres Montenegro'
+	Escribir '23/Marzo/2020'
+	Escribir 'Tarea 6.1'
+	Escribir 'Clase #11 - Fechas'
+	Escribir '**********'
+	
+	Escribir "Ingrese el día (1-30)"
+	Leer dia
+	Escribir "Ingrese el mes (1-12)"
+	Leer mes
+	Escribir "Ingrese el año (Mayor que 0)"
+	Leer ano
+	
+	Si dia>30 O mes>12 O ano<0 Entonces
+		Escribir "Fecha es Invalida"
+	SiNo
+		Escribir "La fecha ", dia, "/", mes, "/", ano, " es valida"
+	Fin Si
+	
+	
+FinAlgoritmo
