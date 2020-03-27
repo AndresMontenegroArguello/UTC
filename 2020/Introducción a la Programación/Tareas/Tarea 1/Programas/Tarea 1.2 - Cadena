@@ -1,0 +1,15 @@
+Algoritmo Cadena
+	// Introducción
+	Escribir 'Introduccion a la Programacion'
+	Escribir 'Andres Montenegro'
+	Escribir '22/Marzo/2020'
+	Escribir 'Tarea 1.2'
+	Escribir 'Clase #8 - Cadena'
+	Escribir '**********'
+	
+	//Programa
+	Escribir "Escriba una cadena: "
+	Leer cad
+	lon <- longitud(cad)
+	Escribir "La cadena ", cad, " tiene ", lon, " caracteres"
+FinAlgoritmo

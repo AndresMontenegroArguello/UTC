@@ -1,0 +1,19 @@
+Algoritmo Multiplicacion
+	// Introducción
+	Escribir 'Introduccion a la Programacion'
+	Escribir 'Andres Montenegro'
+	Escribir '22/Marzo/2020'
+	Escribir 'Tarea 4.3'
+	Escribir 'Clase #10 - Multiplicacion'
+	Escribir '**********'
+	
+	//Programa
+	Escribir "Ingrese Numero: "
+	Leer n
+	
+	Para i<-1 Hasta 6 Con Paso 1 Hacer
+		m <- n * i
+		Escribir n, " x ", i, " = ", m
+	Fin Para
+	
+FinAlgoritmo

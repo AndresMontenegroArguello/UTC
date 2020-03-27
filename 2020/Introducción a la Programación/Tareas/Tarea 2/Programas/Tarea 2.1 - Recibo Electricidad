@@ -1,0 +1,21 @@
+Algoritmo ReciboElectricidad
+	// Introducción
+	Escribir 'Introduccion a la Programacion'
+	Escribir 'Andres Montenegro'
+	Escribir '22/Marzo/2020'
+	Escribir 'Tarea 2.1'
+	Escribir 'Clase #9 - Recibo Electricidad'
+	Escribir '**********'
+	
+	//Programa
+	Escribir "Ingrese Watts Acumulados: "
+	Leer watts
+	pago <- 30
+	Si watts > 15 Y watts < 65 Entonces
+		pago <- pago + ((watts - 14) * 0.50)
+	FinSi
+	Si watts > 30 Entonces
+		pago <- pago + (25.5) + ((watts - 64) * 0.25)
+	FinSi
+	Escribir "Debe pagar ", pago, " dolares, correspondientes a ", watts, " metros cubicos"
+FinAlgoritmo
