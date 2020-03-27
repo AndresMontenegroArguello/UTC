@@ -1,0 +1,21 @@
+Algoritmo Tablas
+	// Introducción
+	Escribir 'Introduccion a la Programacion'
+	Escribir 'Andres Montenegro'
+	Escribir '26/Marzo/2020'
+	Escribir 'Evaluacion 1.1'
+	Escribir 'Clase #11 - Tablas'
+	Escribir '**********'
+	
+	//Programa
+	Escribir "Ingrese Numero:"
+	Leer n
+	Escribir "Ingrese Numero:"
+	Leer x
+	
+	Para i<-1 Hasta x Con Paso 1 Hacer
+		producto <- n * i
+		Escribir n," x ", i, " = ", producto
+	Fin Para
+	
+FinAlgoritmo

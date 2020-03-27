@@ -1,0 +1,28 @@
+Algoritmo ParesImpares
+	// Introducción
+	Escribir 'Introduccion a la Programacion'
+	Escribir 'Andres Montenegro'
+	Escribir '26/Marzo/2020'
+	Escribir 'Evaluacion 1.2'
+	Escribir 'Clase #11 - Pares Impares'
+	Escribir '**********'
+	
+	//Programa
+	pares <- 0
+	impares <- 0
+	
+	Para i<-1 Hasta 70 Con Paso 1 Hacer
+		Si i % 2 = 0 Entonces
+			p <- "Par"
+			pares <- pares + i
+		SiNo
+			p <- "Impar"
+			impares <- impares + i
+		FinSi
+		Escribir n," - ", p
+	Fin Para
+	
+	Escribir "Suma Pares: ", pares
+	Escribir "Suma Impares: ", impares
+	
+FinAlgoritmo

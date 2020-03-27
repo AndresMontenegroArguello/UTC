@@ -1,0 +1,32 @@
+Algoritmo Factura
+	// Introducción
+	Escribir 'Introduccion a la Programacion'
+	Escribir 'Andres Montenegro'
+	Escribir '26/Marzo/2020'
+	Escribir 'Evaluacion 1.3'
+	Escribir 'Clase #11 - Factura'
+	Escribir '**********'
+	
+	//Programa
+	iva = 0.13
+	
+	Escribir "Producto: "
+	Leer producto
+	Escribir "Precio Base: "
+	Leer base
+	
+	pagar <- base * iva
+	
+	Escribir "Debe Pagar: ", pagar " Colones"
+	Escribir "Con cuanto desea pagar?"
+	Leer monto
+	
+	Si monto < pagar Entonces
+		Escribir "Hace Falta Dinero"
+	SiNo
+		vuelto = monto - pagar
+		Escribir "El vuelto es ", vuelto, " Colones"
+		Escribir "Gracias Por Preferirnos"
+	FinSi
+	
+FinAlgoritmo

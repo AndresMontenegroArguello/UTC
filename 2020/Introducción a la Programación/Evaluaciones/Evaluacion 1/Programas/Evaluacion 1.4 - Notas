@@ -1,0 +1,49 @@
+Algoritmo Notas
+	// Introducción
+	Escribir 'Introduccion a la Programacion'
+	Escribir 'Andres Montenegro'
+	Escribir '26/Marzo/2020'
+	Escribir 'Evaluacion 1.4'
+	Escribir 'Clase #11 - Notas'
+	Escribir '**********'
+	
+	//Programa
+	quiz1 <- 0.15
+	quiz2 <- 0.20
+	quiz3 <- 0.30
+	quiz4 <- 0.35
+	
+	notafinal <- 0
+	Dimension nota(4)
+	
+	Escribir "Ingresar Nombre: "
+	Leer nombre
+	Para i<-1 Hasta 4 Con Paso 1 Hacer
+		Escribir "Ingrese Nota Quiz #", i, ": "
+		Leer nota(i)
+		Si i = 1 Entonces
+			n1 <- nota(i) * quiz1
+		FinSi
+		Si i = 2 Entonces
+			n2 <- nota(i) * quiz2
+		FinSi
+		Si i = 3 Entonces
+			n3 <- nota(i) * quiz3
+		FinSi
+		Si i = 4 Entonces
+			n4 <- nota(i) * quiz4
+		FinSi
+	Fin Para
+	
+	notafinal <- n1 + n2 + n3 + n4
+	
+	Escribir "Nota Final: ", notafinal
+	
+	Si notafinal < 70 Entonces
+		Escribir nombre, " Reprobado"
+	SiNo
+		Escribir nombre, " Aprobado"
+	FinSi
+	
+	
+FinAlgoritmo
