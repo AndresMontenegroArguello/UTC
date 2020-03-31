@@ -1,0 +1,42 @@
+Algoritmo Vectores
+	// Introducción
+	Escribir 'Logica y Algoritmos'
+	Escribir 'Andres Montenegro'
+	Escribir '30/Marzo/2020'
+	Escribir 'Tarea 7.1'
+	Escribir 'Clase #12 - Vectores'
+	Escribir '**********'
+	
+	suma1 <- 0
+	suma2 <- 0
+	suma3 <- 0
+	Dimension vector1(10)
+	Dimension vector2(20)
+	Dimension vector3(30)
+	
+	Escribir "Vector #1"
+	Para n <- 1 Hasta 10 Con Paso 1 Hacer
+		vector1(n) <- azar(20)
+		suma1 <- suma1 + vector1(n)
+		Escribir "Numero # ", n, ": ", vector1(n)
+	Fin Para	
+	Escribir "La suma del primer vector de 10 posiciones es: ", suma1
+	
+	Escribir "Vector #2"
+	Para n <- 1 Hasta 20 Con Paso 1 Hacer
+		vector2(n) <- azar(30)
+		suma2 <- suma2 + vector2(n)
+		Escribir "Numero # ", n, ": ", vector2(n)
+	Fin Para	
+	Escribir "La suma del segundo vector de 20 posiciones es: ", suma2
+	
+	Escribir "Vector #3"
+	Para n <- 1 Hasta 30 Con Paso 1 Hacer
+		vector3(n) <- azar(50)
+		suma3 <- suma3 + vector3(n)
+		Escribir "Numero # ", n, ": ", vector3(n)
+	Fin Para	
+	Escribir "La suma del tercer vector de 30 posiciones es: ", suma3
+
+	
+FinAlgoritmo

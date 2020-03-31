@@ -1,0 +1,34 @@
+Algoritmo Promedios
+	// Introducción
+	Escribir 'Logica y Algoritmos'
+	Escribir 'Andres Montenegro'
+	Escribir '30/Marzo/2020'
+	Escribir 'Tarea 7.3'
+	Escribir 'Clase #12 - Promedios'
+	Escribir '**********'
+	
+	suma <- 0
+	Dimension nombres(7)
+	Dimension promedio(7)
+	
+	Para n <- 1 Hasta 7 Con Paso 1 Hacer
+		Escribir "Ingrese Nombre: "
+		Leer nombres(n)
+		Escribir "Ingrese Promedios: "
+		Leer promedio(n)
+		suma <- suma + promedio(n)
+	Fin Para
+	
+	promedioGrupo <- suma/7
+	nmayor <- promedio(1)
+	
+	Para n <- 1 Hasta 7 Hacer
+		Si promedio(n) > nmayor Entonces
+			nmayor <- promedio(n)
+		FinSi
+	FinPara
+	
+	Escribir "Promedio Grupal: ", promedioGrupo
+	Escribir "Mayor Promedio: ", nmayor
+	
+FinAlgoritmo

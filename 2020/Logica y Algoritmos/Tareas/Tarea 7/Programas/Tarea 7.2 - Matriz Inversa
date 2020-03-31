@@ -1,0 +1,28 @@
+Algoritmo MatrizInversa
+	// Introducción
+	Escribir 'Logica y Algoritmos'
+	Escribir 'Andres Montenegro'
+	Escribir '30/Marzo/2020'
+	Escribir 'Tarea 7.2'
+	Escribir 'Clase #12 - MatrizInversa'
+	Escribir '**********'
+	
+	Dimension Matriz(5,5)
+	
+	Escribir 'Matriz:'
+	Para m<-1 Hasta 5 Con Paso 1 Hacer
+		Para n<-1 Hasta 5 Con Paso 1 Hacer
+			Matriz(m, n) <- azar(9)
+			Escribir 'Fila #', m, ', Columna #', n, ': ', Matriz(m,n)
+		Fin Para
+	Fin Para
+	
+	Escribir 'Matriz Inversa:'
+	Para m<-1 Hasta 5 Con Paso -1 Hacer
+		Para n<-1 Hasta 5 Con Paso -1 Hacer
+			Matriz(m, n) <- azar(9)
+			Escribir 'Fila #', m, ', Columna #', n, ': ', Matriz(m,n)
+		Fin Para
+	Fin Para
+	
+FinAlgoritmo
