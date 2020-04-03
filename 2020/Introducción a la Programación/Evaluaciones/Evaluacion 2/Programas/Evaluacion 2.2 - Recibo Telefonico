@@ -1,0 +1,23 @@
+Algoritmo ReciboTelefonico
+	// Introducción
+	Escribir 'Introduccion a la Programacion'
+	Escribir 'Andres Montenegro'
+	Escribir '02/Abril/2020'
+	Escribir 'Tarea 2.2'
+	Escribir 'Clase #12 - Recibo Telefonico'
+	Escribir '**********'
+	
+	//Programa
+	Escribir "Ingrese Nombre: "
+	Leer nombre
+	Escribir "Ingrese Minutos: "
+	Leer min
+	pago <- 6000
+	Si min > 200 Y min < 300 Entonces
+		pago <- pago + ((min - 200) * 30)
+	FinSi
+	Si min > 300 Entonces
+		pago <- pago + (100 * 30) + ((min - 300) * 20)
+	FinSi
+	Escribir "El cliente ", nombre, " debe pagar ", pago, " colones, correspondientes a ", mc, " minutos"
+FinAlgoritmo

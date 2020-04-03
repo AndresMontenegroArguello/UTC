@@ -1,0 +1,25 @@
+Algoritmo Nombre
+	// Introducción
+	Escribir 'Introduccion a la Programacion'
+	Escribir 'Andres Montenegro'
+	Escribir '02/Abril/2020'
+	Escribir 'Evaluacion 2.4'
+	Escribir 'Clase #12 - Nombre'
+	Escribir '**********'
+	
+	//Programa
+	
+	Escribir "Ingrese Nombre:"
+	Leer nom
+	Escribir "Ingrese Primer Apellido:"
+	Leer pap
+	Escribir "Ingrese Segundo Apellido:"
+	Leer sap
+	
+	completo <- nom + " " + pap + " " + sap
+	
+	lon <- Longitud(completo)
+	
+	Escribir "El nombre ", completo, " tiene ", lon, " caracteres"
+	
+FinAlgoritmo

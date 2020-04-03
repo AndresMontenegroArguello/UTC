@@ -1,0 +1,22 @@
+Algoritmo Kilos
+	// Introducción
+	Escribir 'Introduccion a la Programacion'
+	Escribir 'Andres Montenegro'
+	Escribir '02/Abril/2020'
+	Escribir 'Tarea 2.1'
+	Escribir 'Clase #12 - Kilos'
+	Escribir '**********'
+	
+	//Programa
+	Escribir "Ingrese un Peso en Kilogramos (Kg): "
+	Leer kg
+	
+	lb <- kg * 2.2046
+	oz <- kg * 35.2740
+	tn <- kg * 0.0011
+	
+	
+	Escribir "Libras: ", lb, "Lb"
+	Escribir "Onzas: ", oz, "Oz"
+	Escribir "Toneladas: ", tn, "Tn"
+FinAlgoritmo
