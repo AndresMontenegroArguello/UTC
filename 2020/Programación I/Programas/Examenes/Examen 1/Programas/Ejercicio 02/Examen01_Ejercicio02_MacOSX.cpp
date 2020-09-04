@@ -117,7 +117,7 @@ int main()
 	system("clear"); // Borrar la pantalla: Utilizo el comando de sistema "clear" para compilar en Mac OS X
 	//system("cls"); // Borrar la pantalla: Utilizo el comando de sistema "cls" para compilar en Windows OS
 
-	printf("\n\t *** Programa de Cálculo de Notas ***"); // Imprimir mensaje de Bienvenida
+	printf("\n\t *** Programa de Cálculo de Ventas ***"); // Imprimir mensaje de Bienvenida
 	printf("\n\t *** Desarrollado por Andrés Montenegro ***"); // Imprimir mensaje de Desarrollador
 	printf("\n\t *** https://www.amsoftware.co ***"); // Imprimir mensaje de Desarrollador
 	printf("\n\t *** https://www.andresmontenegro.co ***"); // Imprimir mensaje de Desarrollador
